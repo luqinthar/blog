@@ -13,7 +13,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
+services:
+  disqus:
+    shortname: usrlocalbin
+
 params:
+  comments: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: ExampleSite
   description: "ExampleSite description"
@@ -60,7 +65,7 @@ params:
     enabled: true # needs to be explicitly set
     title: ExampleSite
     subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    imageUrl: "images/derp.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
